@@ -16,7 +16,6 @@ public class ChapterDisplay : MonoBehaviour
         //description.text = "Välj " + chapter.Description + " kapitel";
         //Image.sprite = chapter.Image;
         Manager.Listan.Add(gameObject);
-        //Debug.Log(Manager.Listan);
     }
 
    

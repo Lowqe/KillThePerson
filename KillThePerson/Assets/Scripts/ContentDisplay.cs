@@ -13,6 +13,6 @@ public class ContentDisplay : MonoBehaviour
         name.text = chapter.name;
         description.text = "Välj " + chapter.Description + " kapitel";
         Image.sprite = chapter.Image;
-    }// Start is called before the first frame update
+    }
    
 }
