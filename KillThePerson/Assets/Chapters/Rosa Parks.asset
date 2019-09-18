@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbd220efc30cb9947958c3439096b337, type: 3}
-  m_Name: JFK
+  m_Name: Rosa Parks
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  image: {fileID: 0}
+  name: Rosa Parks
+  description: Bussbojkotten
+  image: {fileID: 21300000, guid: 31ba3ea53f6e344039c101082ac52ee8, type: 3}

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Content : ScriptableObject
 {
     [SerializeField] private new string name;
-    [SerializeField] private Sprite image;
-    public Sprite Image { private set => image = value; get => image; }
+    [SerializeField] private Sprite[] image;
     public string Name { get => name; private set => name = value; }
+    public Sprite[] Image { get => image; private set => image = value; }
 }

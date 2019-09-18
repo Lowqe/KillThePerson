@@ -12,9 +12,9 @@ public class ChapterDisplay : MonoBehaviour
     [SerializeField] private Image Image;
     void Start()
     {
-        //name.text = chapter.name;
-        //description.text = "Välj " + chapter.Description + " kapitel";
-        //Image.sprite = chapter.Image;
+        name.text = chapter.name;
+        description.text = "Välj " + chapter.Description + " kapitel";
+        Image.sprite = chapter.Image;
         Manager.Listan.Add(gameObject);
     }
 
