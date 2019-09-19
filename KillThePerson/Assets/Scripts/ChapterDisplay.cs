@@ -10,11 +10,16 @@ public class ChapterDisplay : MonoBehaviour
     [SerializeField] private Text name;
     [SerializeField] private Text description;
     [SerializeField] private Image Image;
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
         name.text = chapter.name;
         description.text = "Välj " + chapter.Description + " kapitel";
         Image.sprite = chapter.Image;
+        Debug.Log("lägg till i listan");
         Manager.Listan.Add(gameObject);
     }
 

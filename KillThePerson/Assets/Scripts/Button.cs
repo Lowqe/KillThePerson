@@ -9,6 +9,8 @@ public class Button : MonoBehaviour
     {
         foreach (GameObject go in Manager.Listan)
         {
+            Debug.Log(this);
+            Debug.Log(go);
             go.SetActive(false);
         }
         content.SetActive(true);
