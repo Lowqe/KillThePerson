@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Malcolm X
   m_EditorClassIdentifier: 
   name: Malcolm X
-  image: []
+  image:
+  - {fileID: 21300000, guid: d47bff2bf121b40c7a2ec8f97ae04f3f, type: 3}
+  - {fileID: 21300000, guid: 502f65cbe6fde41c1b07bc408ccad4ed, type: 3}
+  - {fileID: 21300000, guid: f58efd16811684d8abb05a56e94215b5, type: 3}
