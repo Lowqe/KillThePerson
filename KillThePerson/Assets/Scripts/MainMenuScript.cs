@@ -13,6 +13,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void MainMenuScene()
     {
+        Manager.Listan.Clear();
         SceneManager.LoadScene("Menu");
     }
 }
