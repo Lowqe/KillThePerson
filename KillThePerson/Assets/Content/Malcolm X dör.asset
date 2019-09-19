@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 521cc72755b027a469203a0daf50f8a2, type: 3}
-  m_Name: Black Panter Party
+  m_Name: "Malcolm X d\xF6r"
   m_EditorClassIdentifier: 
   name: 
   image:
-  - {fileID: 21300000, guid: 0ff8fe42daf63407a9be1ac528897aa7, type: 3}
-  - {fileID: 21300000, guid: 8011af126a0b84b288fc088e2d474d97, type: 3}
-  - {fileID: 21300000, guid: 1774e3ac50ba44327a71a72aef235068, type: 3}
+  - {fileID: 21300000, guid: a2f85050d77df427e9c9c806a7c3faa3, type: 3}
+  - {fileID: 21300000, guid: 56d39b3ede95e1a42acfd669ce844685, type: 3}
+  - {fileID: 21300000, guid: 768c5ea00b7374eec828305ba7898c1c, type: 3}
