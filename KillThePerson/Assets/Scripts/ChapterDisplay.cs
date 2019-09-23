@@ -13,7 +13,7 @@ public class ChapterDisplay : MonoBehaviour
     void Start()
     {
         name.text = chapter.name;
-        description.text = "Välj " + chapter.Description + " kapitel";
+        description.text = "Välj " + chapter.Description;
         Image.sprite = chapter.Image;
         Manager.Listan.Add(gameObject);
     }
