@@ -18,6 +18,8 @@ public class Button : MonoBehaviour
     public void HowToPlay()
     {
         howToPlay.SetActive(true);
+        content.SetActive(false);
+
     }
     public void CloseHowToPlay()
     {
