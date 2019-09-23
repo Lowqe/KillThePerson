@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6f46b6c77490f4384f717c7e0a08ff, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  namn: 2
+  "fr\xE5ga": "Vad var m\xE5let med John F. Kennedys civil rights act f\xF6rslag?"
+  svar1: Att illegalisera diskriminering av olika grupper
+  svar2: "Att h\xF6ja minimil\xF6nen hos alla arbetare"
+  svar3: "Att illegalisera b\xE4rande av vapen p\xE5 offentliga platser"

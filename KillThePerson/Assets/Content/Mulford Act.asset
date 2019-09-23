@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521cc72755b027a469203a0daf50f8a2, type: 3}
   m_Name: Mulford Act
   m_EditorClassIdentifier: 
-  name: 
+  name: Mulford Akten
   image:
   - {fileID: 21300000, guid: aea2a912e1a9d4badbe7a34665381428, type: 3}

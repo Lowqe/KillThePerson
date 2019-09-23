@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521cc72755b027a469203a0daf50f8a2, type: 3}
   m_Name: Black Panter Party
   m_EditorClassIdentifier: 
-  name: 
+  name: Black Panther
   image:
   - {fileID: 21300000, guid: 0ff8fe42daf63407a9be1ac528897aa7, type: 3}
   - {fileID: 21300000, guid: 8011af126a0b84b288fc088e2d474d97, type: 3}

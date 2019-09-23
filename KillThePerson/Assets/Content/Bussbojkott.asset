@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521cc72755b027a469203a0daf50f8a2, type: 3}
   m_Name: Bussbojkott
   m_EditorClassIdentifier: 
-  name: 
+  name: Rosa Parks
   image:
   - {fileID: 21300000, guid: 861aa2c12dfc34814b3b75c6cba633d7, type: 3}
   - {fileID: 21300000, guid: 73db9535d1c244337b49a3958a119329, type: 3}

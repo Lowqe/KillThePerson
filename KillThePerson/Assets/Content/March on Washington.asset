@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521cc72755b027a469203a0daf50f8a2, type: 3}
   m_Name: March on Washington
   m_EditorClassIdentifier: 
-  name: 
+  name: Washington Marschen
   image:
   - {fileID: 21300000, guid: f67ea11370719479eb78c77402975ed7, type: 3}
   - {fileID: 21300000, guid: ab720402622474e5f93b6e8585098373, type: 3}

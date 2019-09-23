@@ -12,8 +12,6 @@ public class ContentDisplay : MonoBehaviour
     private int pictureNumber;
     void Start()
     {
-        
-        
         pictureNumber = 0;
         //name.text = content.name;
         AddContent(content.Name);

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521cc72755b027a469203a0daf50f8a2, type: 3}
   m_Name: Civil Rights
   m_EditorClassIdentifier: 
-  name: 
+  name: "Civilr\xE4ttsakten"
   image:
   - {fileID: 21300000, guid: cbbdee25c97b849d4bf2a5836489426f, type: 3}
   - {fileID: 21300000, guid: 535c926a496f741aaa56c1bff6d8c6ec, type: 3}
