@@ -379,6 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda8ccbccca72ad40af4124d1a0bdcc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  howToPlay: {fileID: 0}
   content: {fileID: 9150360350439656396}
 --- !u!1 &9150360350439656396
 GameObject:
@@ -396,7 +397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9150360350439656397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -979,17 +980,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8123404340530557700, guid: 004872932ed83664ea4fe49b40796698,
-        type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123404340530557700, guid: 004872932ed83664ea4fe49b40796698,
-        type: 3}
-      propertyPath: m_Text
-      value: "\xC5r 1955 kliver en kvinna vid namnet Rosa Parks p\xE5 en buss p\xE5
-        v\xE4g hem fr\xE5n jobbet."
-      objectReference: {fileID: 0}
     - target: {fileID: 4534420574496633858, guid: 004872932ed83664ea4fe49b40796698,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1009,6 +999,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 209.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123404340530557700, guid: 004872932ed83664ea4fe49b40796698,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123404340530557700, guid: 004872932ed83664ea4fe49b40796698,
+        type: 3}
+      propertyPath: m_Text
+      value: "\xC5r 1955 kliver en kvinna vid namnet Rosa Parks p\xE5 en buss p\xE5
+        v\xE4g hem fr\xE5n jobbet."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004872932ed83664ea4fe49b40796698, type: 3}
