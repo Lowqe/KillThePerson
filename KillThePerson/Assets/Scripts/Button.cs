@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
+    [SerializeField] private GameObject howToPlay;
     [SerializeField] private GameObject content;
     public void HideContent()
     {
@@ -12,6 +13,15 @@ public class Button : MonoBehaviour
             go.SetActive(false);
         }
         content.SetActive(true);
+    }
+
+    public void HowToPlay()
+    {
+        howToPlay.SetActive(true);
+    }
+    public void CloseHowToPlay()
+    {
+        howToPlay.SetActive(false);
     }
 
     public void ShowContent()

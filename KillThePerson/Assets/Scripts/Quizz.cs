@@ -19,6 +19,7 @@ public class Quizz : MonoBehaviour
         svar1.text = frågor[0].Svar1;
         svar2.text = frågor[0].Svar2;
         svar3.text = frågor[0].Svar3;
+        svar.text = "";
     }
     public void SetQuestion()
     {
@@ -30,5 +31,9 @@ public class Quizz : MonoBehaviour
             svar2.text = frågor[questionNumber].Svar2;
             svar3.text = frågor[questionNumber].Svar3;
         }
+    }
+    public void SetSvar()
+    {
+
     }
 }
