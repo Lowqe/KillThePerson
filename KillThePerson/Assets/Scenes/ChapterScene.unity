@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda8ccbccca72ad40af4124d1a0bdcc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  howToPlay: {fileID: 0}
   content: {fileID: 1126094688}
 --- !u!114 &13713014
 MonoBehaviour:
@@ -2553,6 +2554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda8ccbccca72ad40af4124d1a0bdcc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  howToPlay: {fileID: 0}
   content: {fileID: 1126094688}
 --- !u!114 &560553054
 MonoBehaviour:
