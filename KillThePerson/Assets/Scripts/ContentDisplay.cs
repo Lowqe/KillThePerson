@@ -101,7 +101,7 @@ public class ContentDisplay : MonoBehaviour
                     "ledare Elijah Muhammad för mycket.";
                 break;
             case "Civilrättsakten":
-                beskrivningar = new string[1];
+                beskrivningar = new string[2];
                 beskrivningar[0] = "1963 - 1964 - I juni 1963 lade John F.Kennedy fram förslaget om civila rättigheter";
                 beskrivningar[1] = "Efter John F. Kennedy’s död 1964 fick kongressen igenom the civil rights act som illegaliserade" +
                     " diskriminering på grund av hudfärg, ras, religion, kön och ursprung. Angående civila rättigheter sa John F. Kennedy " +
@@ -120,7 +120,7 @@ public class ContentDisplay : MonoBehaviour
                     "var en höjd hand för “Black power” utan för mänskliga rättigheter. Detta anses vara det öppna politiska " +
                     "ställningstagandet i det moderna OS.";
                 break;
-            case "Black Panther":
+            case "Black Panther Party":
                 beskrivningar = new string[3];
                 beskrivningar[0] = "1966 - Black panthers skapades efter att Malcolm X blev mördad av nation av islam och efter att en annan" +
                     " obeväpnad svart tonåring blev mördad av ett par poliser i San Francisco.";
