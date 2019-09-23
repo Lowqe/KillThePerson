@@ -16,7 +16,7 @@ public class ContentDisplay : MonoBehaviour
         
         pictureNumber = 0;
         //name.text = content.name;
-        
+        AddContent(content.Name);
         SetContent();
     }
     public void nextButton()
@@ -46,8 +46,7 @@ public class ContentDisplay : MonoBehaviour
     private void SetContent()
     {
         Image.sprite = content.Image[pictureNumber];
-        //description.text = beskrivningar[pictureNumber];
-        //description.text = "Välj " + content.Description + " kapitel";
+        description.text = beskrivningar[pictureNumber];
     }
 
     private void AddContent(string name)
