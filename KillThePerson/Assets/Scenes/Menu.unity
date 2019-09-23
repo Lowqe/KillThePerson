@@ -490,8 +490,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0024414, y: 77}
-  m_SizeDelta: {x: 800, y: 296.2}
+  m_AnchoredPosition: {x: -0.0024414, y: 23.5}
+  m_SizeDelta: {x: 800, y: 403.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647754593
 MonoBehaviour:
@@ -520,17 +520,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Anv\xE4nd musen f\xF6r att v\xE4lja h\xE4ndelse p\xE5 tidslinjen. V\xE4l
-    inne i h\xE4ndelsen \xE4r ditt jobb att klicka p\xE5 r\xE4tt del av bilden som
-    leder till n\xE4sta avsnitt av kapitlet. Varje bild har informationen om den valda
-    h\xE4ndelsen. \n\nN\xE4r du k\xE4nner dig redo kan du trycka p\xE5 knappen \u201CTesta
-    mina kunskaper\u201D f\xF6r att se vad din resa genom tiden har l\xE4rt dig.\n"
+    inne i h\xE4ndelsen \xE4r ditt jobb att l\xE4sa dig till vad som har h\xE4nt och
+    klicka dig vidare till n\xE4sta del. \n\nN\xE4r du k\xE4nner dig redo kan du trycka
+    p\xE5 knappen \u201CTesta mina kunskaper\u201D f\xF6r att se vad din resa genom
+    tiden har l\xE4rt dig.\n"
 --- !u!222 &647754594
 CanvasRenderer:
   m_ObjectHideFlags: 0
