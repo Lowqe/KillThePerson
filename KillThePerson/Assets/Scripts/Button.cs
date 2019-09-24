@@ -8,7 +8,7 @@ public class Button : MonoBehaviour
     [SerializeField] private GameObject content;
     public void HideContent()
     {
-        foreach (GameObject go in Manager.Listan)
+        foreach (GameObject go in Manager.ChapterList)
         {
             go.SetActive(false);
         }
@@ -26,8 +26,13 @@ public class Button : MonoBehaviour
 
     public void ShowContent()
     {
+        if(name.Equals("Stop quizz"))
+        {
+            Debug.Log("score = 0");
+            Manager.Instance.RemoveScore();
+        }
         content.SetActive(false);
-        foreach(GameObject go in Manager.Listan)
+        foreach(GameObject go in Manager.ChapterList)
         {
             go.SetActive(true);
         }

@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Quizz : MonoBehaviour
 {
-    [SerializeField] private Text svar1;
-    [SerializeField] private Text svar2;
-    [SerializeField] private Text svar3;
+    [SerializeField] private GameObject svar1;
+    [SerializeField] private GameObject svar2;
+    [SerializeField] private GameObject svar3;
     [SerializeField] private Text fråga;
     [SerializeField] private Text svar;
     [SerializeField] private List<Question> frågor;
@@ -15,22 +15,62 @@ public class Quizz : MonoBehaviour
 
     private void Start()
     {
-        fråga.text = frågor[0].Fråga;
-        svar1.text = frågor[0].Svar1;
-        svar2.text = frågor[0].Svar2;
-        svar3.text = frågor[0].Svar3;
+        questionNumber = 0;
         svar.text = "";
+        SetQuestion();
     }
     public void SetQuestion()
     {
-        if(questionNumber < frågor.Count-1)
+        fråga.text = frågor[questionNumber].Fråga;
+        string fråga1 = frågor[questionNumber].Svar1;
+        string fråga2 = frågor[questionNumber].Svar2;
+        string fråga3 = frågor[questionNumber].Svar3;
+      
+            float number = Random.Range(1, 3.99f);
+            int round = (int)number;
+            switch (round)
+            {
+                case 1:
+                    svar1.GetComponent<AnswerButton>().SetQuestion(fråga1, true);
+                    svar2.GetComponent<AnswerButton>().SetQuestion(fråga2, false);
+                    svar3.GetComponent<AnswerButton>().SetQuestion(fråga3, false);
+                    break;
+                case 2:
+                    svar1.GetComponent<AnswerButton>().SetQuestion(fråga2, false);
+                    svar2.GetComponent<AnswerButton>().SetQuestion(fråga1, true);
+                    svar3.GetComponent<AnswerButton>().SetQuestion(fråga3, false);
+                    break;
+                case 3:
+                    svar1.GetComponent<AnswerButton>().SetQuestion(fråga3, false);
+                    svar2.GetComponent<AnswerButton>().SetQuestion(fråga2, false);
+                    svar3.GetComponent<AnswerButton>().SetQuestion(fråga1, true);
+                    break;
+            }
+        
+    }
+    public void NextQuestion()
+    {
+        if (questionNumber < frågor.Count -1)
         {
             questionNumber++;
-            fråga.text = frågor[questionNumber].Fråga;
-            svar1.text = frågor[questionNumber].Svar1;
-            svar2.text = frågor[questionNumber].Svar2;
-            svar3.text = frågor[questionNumber].Svar3;
+            SetQuestion();
         }
+        else
+        {
+            svar1.SetActive(false);
+            svar2.SetActive(false);
+            svar3.SetActive(false);
+            fråga.text = "";
+            if(Manager.Instance.GetScore() == 0)
+            {
+                svar.text = "Inga rätt svar";
+            }
+            else
+            {
+                svar.text = "Rätt svar " + Manager.Instance.GetScore();
+            }
+        }
+         
     }
     public void SetSvar()
     {

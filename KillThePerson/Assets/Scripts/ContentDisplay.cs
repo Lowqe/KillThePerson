@@ -130,7 +130,6 @@ public class ContentDisplay : MonoBehaviour
                     "De blev väldigt populära och vid 1968 hade de ungefär 2000 medlemmar.";
                 break;
             default:
-                Debug.Log(content.Name);
                 Debug.Log("inget namn");
                 break;
         }
