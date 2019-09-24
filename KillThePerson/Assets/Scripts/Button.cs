@@ -13,12 +13,12 @@ public class Button : MonoBehaviour
             go.SetActive(false);
         }
         content.SetActive(true);
+        content.GetComponent<Quiz>().ZeroTheQuiz();
     }
 
     public void HowToPlay()
     {
         howToPlay.SetActive(true);
-        content.SetActive(false);
 
     }
     public void CloseHowToPlay()

@@ -11,6 +11,7 @@ public class Quiz : MonoBehaviour
     [SerializeField] private Text fråga;
     [SerializeField] private Text svar;
     [SerializeField] private List<Question> frågor;
+    [SerializeField] private GameObject startaOm;
     private int questionNumber;
 
 
@@ -47,6 +48,7 @@ public class Quiz : MonoBehaviour
     {
         if (questionNumber < frågor.Count -1)
         {
+            svar.text = "";
             foreach (GameObject go in Manager.AnswerList)
             {
                 go.SetActive(true);
@@ -68,12 +70,15 @@ public class Quiz : MonoBehaviour
             {
                 svar.text = "Rätt svar " + Manager.Instance.GetScore();
             }
+            startaOm.SetActive(true);
         }
          
     }
     public void ZeroTheQuiz()
     {
         questionNumber = 0;
+        Manager.Instance.RemoveScore();
+        startaOm.SetActive(false);
         svar.text = "";
         foreach (GameObject go in Manager.AnswerList)
         {
