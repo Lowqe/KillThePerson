@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namn: "Vad gjorde Rosa Parks v\xE4gran att ge upp sin plats s\xE5 betydelsefull?"
   "fr\xE5ga": "Vad gjorde Rosa Parks v\xE4gran att ge upp sin plats s\xE5 betydelsefull?"
-  svar1: "Det var en tydlig protest mot svartas f\xF6rtryck"
+  svar1: "Samtliga svar \xE4r korrekt"
   svar2: "Det var ett praktexempel p\xE5 hur lagen aldrig var p\xE5 de svartas sida"
-  svar3: "Samtliga svar \xE4r korrekt"
+  svar3: "Det var en tydlig protest mot svartas f\xF6rtryck"
