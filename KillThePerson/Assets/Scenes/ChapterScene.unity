@@ -3142,17 +3142,17 @@ PrefabInstance:
     - target: {fileID: 6479185089385500342, guid: 057ef157b5f98e4498e5b382d50a78d8,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.63
+      value: 1.13
       objectReference: {fileID: 0}
     - target: {fileID: 6479185089385500342, guid: 057ef157b5f98e4498e5b382d50a78d8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -82.99
+      value: -83.41
       objectReference: {fileID: 0}
     - target: {fileID: 6479185089385500342, guid: 057ef157b5f98e4498e5b382d50a78d8,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 46.19
+      value: 98.74
       objectReference: {fileID: 0}
     - target: {fileID: 515616418691014765, guid: 057ef157b5f98e4498e5b382d50a78d8,
         type: 3}
@@ -4511,9 +4511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c514480ee2943b0419635d77d33ff2a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  svar1: {fileID: 1061600409}
-  svar2: {fileID: 761016351}
-  svar3: {fileID: 1461791630}
+  svar1: {fileID: 0}
+  svar2: {fileID: 0}
+  svar3: {fileID: 0}
   "fr\xE5ga": {fileID: 2086879505}
   svar: {fileID: 830832660}
   "fr\xE5gor":
