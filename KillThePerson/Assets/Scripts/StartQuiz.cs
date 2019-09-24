@@ -10,5 +10,9 @@ public class StartQuiz : MonoBehaviour
     {
         quiz.SetActive(true);
         quiz.GetComponent<Quiz>().ZeroTheQuiz();
+        foreach (GameObject go in Manager.ChapterList)
+        {
+            go.SetActive(false);
+        }
     }
 }
