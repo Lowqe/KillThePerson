@@ -30,7 +30,7 @@ public class Button : MonoBehaviour
     {
         if(name.Equals("Stop quizz"))
         {
-            Debug.Log("score = 0");
+            Debug.Log(Manager.Instance.GetScore());
             Manager.Instance.RemoveScore();
         }
         content.SetActive(false);

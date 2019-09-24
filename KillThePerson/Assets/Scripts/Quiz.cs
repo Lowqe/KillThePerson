@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Quizz : MonoBehaviour
+public class Quiz : MonoBehaviour
 {
     [SerializeField] private GameObject svar1;
     [SerializeField] private GameObject svar2;
@@ -13,12 +13,7 @@ public class Quizz : MonoBehaviour
     [SerializeField] private List<Question> frågor;
     private int questionNumber;
 
-    private void Start()
-    {
-        questionNumber = 0;
-        svar.text = "";
-        SetQuestion();
-    }
+
     public void SetQuestion()
     {
         fråga.text = frågor[questionNumber].Fråga;
@@ -52,6 +47,10 @@ public class Quizz : MonoBehaviour
     {
         if (questionNumber < frågor.Count -1)
         {
+            foreach (GameObject go in Manager.AnswerList)
+            {
+                go.SetActive(true);
+            }
             questionNumber++;
             SetQuestion();
         }
@@ -71,6 +70,16 @@ public class Quizz : MonoBehaviour
             }
         }
          
+    }
+    public void ZeroTheQuiz()
+    {
+        questionNumber = 0;
+        svar.text = "";
+        foreach (GameObject go in Manager.AnswerList)
+        {
+            go.SetActive(true);
+        }
+        SetQuestion();
     }
     public void SetSvar()
     {

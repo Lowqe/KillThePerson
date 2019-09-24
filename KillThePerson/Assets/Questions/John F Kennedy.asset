@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f6f46b6c77490f4384f717c7e0a08ff, type: 3}
-  m_Name: 2
+  m_Name: John F Kennedy
   m_EditorClassIdentifier: 
-  namn: 2
+  namn: John F Kennedy
   "fr\xE5ga": "Vad var m\xE5let med John F. Kennedys civil rights act f\xF6rslag?"
   svar1: Att illegalisera diskriminering av olika grupper
   svar2: "Att h\xF6ja minimil\xF6nen hos alla arbetare"

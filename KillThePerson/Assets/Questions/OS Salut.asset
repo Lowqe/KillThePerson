@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6f46b6c77490f4384f717c7e0a08ff, type: 3}
+  m_Name: OS Salut
+  m_EditorClassIdentifier: 
+  namn: OS Salut
+  "fr\xE5ga": "Vilka tv\xE5 personer var det som utf\xF6rde \u201CThe black power
+    salute\u201D under OS 1968?"
+  svar1: Tommie Smith och John Carlos
+  svar2: Tommie Smith och Peter Norman
+  svar3: Martin Luther King Jr. och John Carlos

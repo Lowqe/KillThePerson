@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6f46b6c77490f4384f717c7e0a08ff, type: 3}
+  m_Name: "Hur reagerade Malcolm X i samband med \u201CThe march on Washington\u201D"
+  m_EditorClassIdentifier: 
+  namn: "Hur reagerade Malcolm X i samband med \u201CThe march on Washington\u201D?"
+  "fr\xE5ga": "Hur reagerade Malcolm X i samband med \u201CThe march on Washington\u201D?"
+  svar1: "Han ans\xE5g att det var en fars och att de som deltog var springpojkar
+    \xE5t det vita etablissemanget"
+  svar2: "Han tyckte att det var positivt att s\xE5 m\xE5nga engagerade sig f\xF6r
+    j\xE4mlika r\xE4ttigheter"
+  svar3: "Han uppmuntrade samtliga medlemmar av Nation of Islam att g\xE5 dit och
+    predika deras budskap"
