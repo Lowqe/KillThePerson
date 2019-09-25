@@ -26,7 +26,7 @@ public class AnswerButton : MonoBehaviour
         if (right)
         {
             answerField.text = "Rätt";
-            Manager.Instance.AddScore();
+            Manager.Instance.AddQuizScore();
         }
         else
         {

@@ -29,8 +29,8 @@ public class Button : MonoBehaviour
     {
         if(name.Equals("Stop quizz"))
         {
-            Debug.Log(Manager.Instance.GetScore());
-            Manager.Instance.RemoveScore();
+            Debug.Log(Manager.Instance.GetQuizScore());
+            Manager.Instance.RemoveQuizScore();
         }
         content.SetActive(false);
         foreach(GameObject go in Manager.ChapterList)

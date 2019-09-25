@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
-    private int score;
-
+    private int quizScore;
+    private int memeoryScore;
     public static List<GameObject> ChapterList { private set; get; }
     public static List<GameObject> AnswerList { get; private set; }
 
@@ -24,18 +24,33 @@ public class Manager : MonoBehaviour
         {
             AnswerList = new List<GameObject>();
         }
-        score = 0;
+        quizScore = 0;
     }
-    public void AddScore()
+    public void AddQuizScore()
     {
-        score++;
+        quizScore++;
     }
-    public void RemoveScore()
+    public void RemoveQuizScore()
     {
-        score = 0;
+        quizScore = 0;
     }
-    public int GetScore()
+    public int GetQuizScore()
     {
-        return score;
+        return quizScore;
+    }
+    public int GetMemoryScore()
+    {
+        Debug.Log("MemoryScore: " + memeoryScore);
+        return memeoryScore;
+    }
+    public void RemoveMemoryScore()
+    {
+        Debug.Log("Score removed" + 0);
+        memeoryScore = 0;
+    }
+    public void AddMemoryScore(int addScore)
+    {
+        Debug.Log("Added score: " + addScore);
+        memeoryScore += addScore;
     }
 }

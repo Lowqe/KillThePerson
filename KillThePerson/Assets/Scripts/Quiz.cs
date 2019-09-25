@@ -62,13 +62,13 @@ public class Quiz : MonoBehaviour
             svar2.SetActive(false);
             svar3.SetActive(false);
             fråga.text = "";
-            if(Manager.Instance.GetScore() == 0)
+            if(Manager.Instance.GetQuizScore() == 0)
             {
                 svar.text = "Inga rätt svar";
             }
             else
             {
-                svar.text = "Rätt svar " + Manager.Instance.GetScore();
+                svar.text = "Rätt svar " + Manager.Instance.GetQuizScore();
             }
             startaOm.SetActive(true);
         }
@@ -77,7 +77,7 @@ public class Quiz : MonoBehaviour
     public void ZeroTheQuiz()
     {
         questionNumber = 0;
-        Manager.Instance.RemoveScore();
+        Manager.Instance.RemoveQuizScore();
         startaOm.SetActive(false);
         svar.text = "";
         foreach (GameObject go in Manager.AnswerList)
