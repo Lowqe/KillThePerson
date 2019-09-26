@@ -14,6 +14,8 @@ public class MainMenuScript : MonoBehaviour
     public void MainMenuScene()
     {
         Manager.ChapterList.Clear();
+        Manager.AnswerList.Clear();
+        Manager.MemoryList.Clear();
         SceneManager.LoadScene("Menu");
     }
 }

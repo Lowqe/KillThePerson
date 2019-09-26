@@ -9,6 +9,8 @@ public class MemoryDisplay : MonoBehaviour
     [SerializeField] private Image chapterImage;
     [SerializeField] private GameObject[] buttons;
     [SerializeField] private GameObject startMemory;
+    [SerializeField] private Text antalRätt;
+    [SerializeField] private Text kapitelText;
     private int chapterNumber;
     private int imageNumber;
     private int maxPictures;
@@ -23,8 +25,13 @@ public class MemoryDisplay : MonoBehaviour
     public void StartMemory()
     {
         startMemory.SetActive(true);
+        foreach (GameObject go in Manager.MemoryList)
+        {
+            go.SetActive(true);
+        }
         chapterNumber = 0;
         SetMemory();
+        antalRätt.text = "";
     }
     public void ExitMemory()
     {
@@ -40,16 +47,29 @@ public class MemoryDisplay : MonoBehaviour
             chapterNumber++;
             for(int i = 0; i < buttons.Length; i++)
             {
-                Debug.Log("Setting false");
                 buttons[i].GetComponent<Picture>().AssingedFalse();
             }
+            foreach (GameObject go in Manager.MemoryList)
+            {
+                go.GetComponent<Image>().color = Color.white;
+            }
             SetMemory();
+        }
+        else
+        {
+            foreach(GameObject go in Manager.MemoryList)
+            {
+                go.SetActive(false);
+            }
+            antalRätt.text = "Antal rätt: " + Manager.Instance.GetMemoryScore();
+            kapitelText.text = "";
         }
     }
 
     public void SetMemory()
     {
         usedNumbers = new List<int>();
+        kapitelText.text = chapters[chapterNumber].Name;
         chapterImage.sprite = chapters[chapterNumber].Image;
         Sprite[] firstSet = contents[chapterNumber].Image;
         SetPictures(true, firstSet);
@@ -68,7 +88,6 @@ public class MemoryDisplay : MonoBehaviour
             imageNumber++;
             if (imageNumber <= maxPictures)
             {
-                Debug.Log(imageNumber);
                 GameObject assignObject = buttons[Assigned()];
                 assignObject.GetComponent<Image>().sprite = set[i];
                 assignObject.GetComponent<Picture>().Assign(true, isRight);
@@ -86,7 +105,6 @@ public class MemoryDisplay : MonoBehaviour
             random = (int)Random.Range(0, buttons.Length - 0.1f);
         }
         while (buttons[random].GetComponent<Picture>().ReturnIsAssigned());
-        Debug.Log("return: " + random);
         return random;
     }
 
@@ -97,13 +115,14 @@ public class MemoryDisplay : MonoBehaviour
         {
             random = (int)Random.Range(1, (chapters.Length - 0.1f));
         }
-        while (random == chapterNumber && CheckNumbers(random));
+        while (CheckNumbers(random) || random == chapterNumber);
         return random;
     }
     private bool CheckNumbers(int number)
     {
         for(int i =0; i < usedNumbers.Count; i++)
         {
+
             if(number == usedNumbers[i])
             {
                 return true;

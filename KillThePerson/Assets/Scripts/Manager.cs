@@ -9,6 +9,8 @@ public class Manager : MonoBehaviour
     public static List<GameObject> ChapterList { private set; get; }
     public static List<GameObject> AnswerList { get; private set; }
 
+    public static List<GameObject> MemoryList { get; private set; }
+
     public static Manager Instance;
     private void Awake()
     {
@@ -24,7 +26,11 @@ public class Manager : MonoBehaviour
         {
             AnswerList = new List<GameObject>();
         }
-        quizScore = 0;
+        if(MemoryList == null)
+        {
+            MemoryList = new List<GameObject>();
+        }
+            quizScore = 0;
     }
     public void AddQuizScore()
     {
@@ -45,7 +51,6 @@ public class Manager : MonoBehaviour
     }
     public void RemoveMemoryScore()
     {
-        Debug.Log("Score removed" + 0);
         memeoryScore = 0;
     }
     public void AddMemoryScore(int addScore)

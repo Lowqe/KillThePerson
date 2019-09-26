@@ -11,6 +11,7 @@ public class Picture : MonoBehaviour
     private void Start()
     {
         isPressed = false;
+        Manager.MemoryList.Add(gameObject);
     }
 
     public bool ReturnIsAssigned()
@@ -23,7 +24,6 @@ public class Picture : MonoBehaviour
     }
     public void Assign(bool isAssigned, bool isRight)
     {
-        Debug.Log(isRight);
         this.isRight = isRight;
         this.isAssigned = isAssigned;
     }
